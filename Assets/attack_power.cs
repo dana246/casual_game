@@ -9,6 +9,7 @@ public class attack_power : MonoBehaviour
     int pAttackPower, aAttackPower;
     public TextMeshProUGUI pAttackPowerText;
     public TextMeshProUGUI aAttackPowerText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +32,7 @@ public class attack_power : MonoBehaviour
         return pAttackPower;
     }
 
-    protected int ai_attack_power()
+    public int ai_attack_power()
     {
         aAttackPower = Random.Range(min_num, max_num);
         aAttackPowerText.text = aAttackPower.ToString();
